@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frequently Asked Questions - Emma's Baking Recipes</title>
+    <link rel="icon" href="images/head-icon.png" type="image/ icon type"/>
+    <!-- File css phần layout + trang home -->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <!-- File css phần content các trang khác -->
+    <link rel="stylesheet" href="css/other-pages-content.css"/>
+    <!-- File css phần Accordion -->
+    <link rel="stylesheet" href="css/accordion.css">
+
+    <!-- Lấy font google -->
+    <!-- font sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- font serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Lấy icon từ Font Awesome -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+</head>
+<body>
+    <a id="top"></a>
+
+    <!-- A) PHẦN HEADER -->
+    <header class="section header">
+        <div class="pink-header">
+            <div class="container">
+                <div class="pink-header-email">
+                    <!-- Trigger/Open the Modal -->
+                    <a id="myBtn">Receive newest recipes via email <i class="fa-solid fa-arrow-right"></i></a>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="close">&times;</div>
+                            <div class="modal-name">SUBSCRIBE</div>
+                            <div class="modal-title">Baking Made Easy</div>
+                            <div class="modal-excerpt">This email series is a great place to start. I’ll walk you through a few of my most popular recipes and show you exactly why they work.</div>
+                            <div class="modal-form-container">
+                                <form method="get" action="#" class="signup-bar">
+                                    <input required type="text" placeholder="Your first name" name="first-name"/>
+                                    <input required type="email" placeholder="Your email address" name="email-address"/>
+                                    <button type="submit">Sign up!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pink-header-nav">
+                    <ul>
+                        <li><a href="start-here.html">Start here</a></li>
+                        <li>&#183;</li>
+                        <li><a href="about-and-contact.html">About</a></li>
+                        <li>&#183;</li>
+                        <li><a href="baking-tips-list.html">Baking tip</a></li>
+                        <li>&#183;</li>
+                        <li><a href="cookbook-list.html">Cookbooks</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="sticky-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="recipe-index.html"><img src="images/header-icon1-menu.png"/>All recipes</a></li>
+                        <li class="menu-item"><a href="bread-archives.html"><img src="images/header-icon2-bread.png"/>Bread</a></li>
+                        <li class="menu-item"><a href="cakes-archives.html"><img src="images/header-icon3-cakes.png"/>Cakes</a></li>
+                        <li class="menu-item"><a href="cookie-archives.html"><img src="images/header-icon4-cookies.png"/>Cookies</a></li>
+                        <li class="menu-item"><a href="video.html"><img src="images/header-icon5-videos.png"/>Videos</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- B) PHẦN NAV -->
+    <nav class="section nav">
+        <div class="container">
+            <div class="browse">Browse by:</div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Type <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Bread</a>
+                    <a href="recipe-index.html">Breakfirst</a>
+                    <a href="recipe-index.html">Brownies & Bars</a>
+                    <a href="recipe-index.html">Cake</a>
+                    <a href="recipe-index.html">Candy</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Cheesecake</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Coockies</a>
+                    <a href="recipe-index.html">Cupcakes</a>
+                    <a href="recipe-index.html">Desserts</a>
+                    <a href="recipe-index.html">Dinner & sides</a>
+                    <a href="recipe-index.html">Muffins</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Dietary <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Dairy free</a>
+                    <a href="recipe-index.html">Egg free</a>
+                    <a href="recipe-index.html">Gluten free</a>
+                    <a href="recipe-index.html">Vegan</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Ingredient <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Apples</a>
+                    <a href="recipe-index.html">Bananas</a>
+                    <a href="recipe-index.html">Blueberries</a>
+                    <a href="recipe-index.html">Chocolate</a>
+                    <a href="recipe-index.html">Cinnamon</a>
+                    <a href="recipe-index.html">Lemons</a>
+                    <a href="recipe-index.html">Peanut butter</a>
+                    <a href="recipe-index.html">Pumpkin</a>
+                    <a href="recipe-index.html">More...</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Occasion <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Christmas</a>
+                    <a href="recipe-index.html">Easter</a>
+                    <a href="recipe-index.html">Halloween</a>
+                    <a href="recipe-index.html">St. Patrick's day</a>
+                    <a href="recipe-index.html">Thanksgiving</a>
+                    <a href="recipe-index.html">Valentine's day</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Season <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Spring</a>
+                    <a href="recipe-index.html">Summer</a>
+                    <a href="recipe-index.html">Fall</a>
+                    <a href="recipe-index.html">Winter</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="recipe-index.html">Skill-level <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="recipe-index.html">Beginner</a>
+                    <a href="recipe-index.html">Intermediate</a>
+                    <a href="recipe-index.html">Advanced</a>
+                </div>
+            </div>
+            <img class="logo-nav" src="images/nav-logo.png"/>
+        </div>
+    </nav>
+
+    <!-- C) PHẦN CONTENT -->
+    <section class="section main">
+        <div class="page-header">
+            <div class="page-header-container">
+                <div class="content-center-header">
+                    <h1 class="page-title gray-background">Frequently Asked Questions</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container faq-list">
+            <div class="entry-content">
+                <p>Here you will find answers to all of the frequently asked questions my team and I receive. Click the pink box or arrow for the answer to drop down.</p>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Do you have the nutrition information for your recipes?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>I don’t usually include nutrition information as it can vary between different brands of the same ingredients, and many recipes have ingredient substitutions or optional ingredients. However, there are many great online calculators where you can plug in your exact ingredients like this one: https://www.verywellfit.com/recipe-nutrition-analyzer-4157076</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Can I substitute gluten free flour in your recipes?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>Admittedly, my team and I do not have much experience using gluten free flour. Although some readers report using an all purpose 1:1 gluten free flour in many of our recipes with success, you should expect slightly different results.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">How should I adjust the recipe for high altitude?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>We wish we could help, but my team and I have no experience baking at high altitude. We know some readers have found this chart helpful: https://www.kingarthurflour.com/learn/high-altitude-baking.html</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Can I make recipe substitutions?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>While some recipes can withstand ingredient substitutions, most traditional baking recipes cannot. Remember that baking is a science and certain ingredients are used for a reason. If substitutions have been successfully tested, you’ll see it written in the blog post or recipe notes. Otherwise, we likely haven’t tested it. And when making substitutions, the results will always differ from the original recipe.</p>
+                        <p>Some common substitutions we do use:</p>
+                        <ul>
+                            <li><b>Sour Cream/Yogurt:</b> Typically, sour cream and plain yogurt can be used interchangeably in baking recipes.</li>
+                            <li><b>Buttermilk Substitution:</b> If you don’t have any buttermilk, you can make a DIY soured milk. For every 1 cup of buttermilk, add 1 or 1 and 1/2 teaspoons of white vinegar or lemon juice to a liquid measuring cup. Fill with enough regular milk to yield 1 cup. Whisk together, then let sit for 5 minutes before using in the recipe. Whole milk is best, but you can use any fat or nondairy milk. The lower the fat, the less “rich” the baked good will taste.</li>
+                            <li><b>Cake Flour:</b> When a recipe calls for cake flour, it’s best to use cake flour. In a pinch, however, you can make your own cake flour substitute.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Can I use less sugar?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>Sugar is used for moisture and texture in baked goods as well as taste. You can certainly try reducing the sugar, but the resulting texture will be different than intended.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Why are my cakes/cupcakes dense or dry?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>I have a page all about <a href="#">preventing dense or dry cakes</a> if you want to review it. You’ll find a lot of information that will help you troubleshoot.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">What should I do if my cookies are spreading too much?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>For help troubleshooting cookies that spread, visit <a href="#">10 Guaranteed Tips to Prevent Cookies from Spreading</a></p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Why didn’t my cookies spread at all?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>When cookies aren’t spreading, it usually means that there’s too much dry ingredient (flour) soaking up all the liquid. Make sure you are properly measuring your flour. When measuring flour, use the <a href="#">spoon & level</a> method. Do not scoop the flour out of the container/bag. Doing so leaves you with excess flour in the cookie dough. If you’re in the middle of baking a batch and the cookies still aren’t spreading, remove them from the oven, and use a spoon to slightly flatten them out before returning them to the oven. You can also take your big bowl of cookie dough and microwave it for 10 seconds to slightly warm it up before scooping/rolling/baking. Warm cookie dough spreads more. (This is what I do when I notice my cookies aren’t spreading!)</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">Can I use a different size pan for my cakes?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>If my team and I have tested a different size pan it will be listed in the recipe notes. For any shapes/sizes that are not listed, you can use my handy <a href="#">Cake Pan Sizes & Conversions</a> post to help calculate how much batter you would need for different size pans.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-group">
+                    <div class="faq-header accordion">
+                        <div class="faq-title">How long can I keep frosted desserts at room temperature?</div>
+                        <div class="accordion-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    </div>
+                    <div class="faq-content accordion-content-panel">
+                        <p>After decorating anything with buttercream or cream cheese frosting, it’s fine for 1 day at room temperature. After that, it’s best to refrigerate it. As always, use your best judgment and whatever you are comfortable with.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- D) PHẦN FOOTER -->
+    <footer class="section footer">
+        <!-- Phần LOGO FOOTER -->
+        <div class="logo-footer-container">
+            <div class="container">
+                <div class="stripe-pattern">
+                    <div class="stripe-pink"></div>
+                    <div class="stripe-blue"></div>
+                    <div class="stripe-orange"></div>
+                </div>
+                <div class="logo-footer">
+                    <img src="images/footer-logo.png"/>
+                </div>
+                <div class="icon-footer">
+                    <img class="icon-footer-left" src="images/footer-icon1.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon2.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon3.png" width=20px/>
+                    <img class="icon-footer-left" src="images/footer-icon4.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon5.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon6.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon7.png" width=20px/>
+                    <img class="icon-footer-right" src="images/footer-icon8.png" width=20px/>
+                </div>
+            </div>
+        </div>
+        <a id="signup-footer"></a>
+        <!-- Phần SIGNUP-FOOTER -->
+        <div class="signup-footer-background">
+            <div class="container">
+                <div class="signup-footer">
+                    <div class="signup-intro">Something sweet for your inbox: Sign up for FREE recipes!</div>
+                    <div class="signup-container">
+                        <form method="get" action="#" class="signup-bar">
+                            <input required type="text" placeholder="Your first name" name="first-name"/>
+                            <input required type="email" placeholder="Your email address" name="email-address"/>
+                            <button type="submit">Sign up!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phần NAV FOOTER -->
+        <div class="nav-footer">
+            <div class="container">
+                <div class="nav-footer-left"><a href="#top"><i class="fa-solid fa-arrow-up"></i>Top</a></div>
+                <div class="nav-footer-left"><a href="start-here.html">Start here</a></div>
+                <div class="nav-footer-left"><a href="about-and-contact.html">About us</a></div>
+                <div class="nav-footer-left"><a href="privacy-policy.html">Privacy policy</a></div>
+                <div class="nav-footer-left"><a href="frequently-asked-questions.html">FAQ</a></div>
+                <div class="nav-footer-right">Emma's Baking Recipes &#169; 2022. Group project by second team.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PHẦN JS CHO ACCODION -->
+    <script type="text/javascript" src="js/arrcodion.js"></script>
+    <!-- JS phần Modal -->
+    <script type="text/javascript" src="js/modal.js"></script>
+    <!-- JS phần Sticky header -->
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+</body>
+</html>
